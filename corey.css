@@ -1,0 +1,196 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100vh;
+}
+
+body {
+	background-color: black;
+	padding: 30px;
+	font-family: Lato, sans-serif;
+}
+
+.logo {
+	width: 70vw;
+	height: 40vh;
+	margin: 0 auto;
+}
+
+.profile {
+	width: 50vw;
+	float: left;
+	padding-top: 0px;
+	padding-right: 20px;
+}
+
+h1 {
+	padding-top: 10px;
+	color:#CCCCCC;
+	font-size: 4vw;
+}
+
+p {
+	color:#CCCCCC;
+	font-size: 2vw;
+}
+
+h2 {
+	padding-top: 10vh;
+	color: green;
+	font-size: 5vw;
+	margin-left: auto;
+	margin-top: 2vh;
+	text-align: center;
+}
+
+h3 {
+	padding: 1vh;
+	color: green;
+	font-size: 3vw;
+	margin-left: auto;
+	margin-top: 2vh;
+	text-align: center;
+
+}
+
+.services li a{
+	font-size: 2vw;
+	color: green;
+	width: 80vw;
+	text-decoration: none;
+}
+
+footer {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); 
+	grid-gap: 10px;
+	grid-template-areas:
+	"address hours map"
+	"phone . map"
+	". . map"; 
+	height: 40vh;
+	width: 96vw;
+	color: white;
+	background-color: black;
+	margin-top: 3vh;
+}
+
+.mail {
+	text-decoration: none;
+	color: green;
+	font-size: 2vw;
+}
+.map {
+	grid-area: map;
+}
+
+.address a{
+	text-decoration: none;
+	color: green;
+	font-size: 2vw;
+	grid-area: address;
+	padding-bottom: 8vh;
+}
+
+.hours {
+	color: green;
+	font-size: 2vw;
+	grid-area: hours;
+}
+
+.phone {
+  color: green;
+  font-size: 2vw;
+  grid-area: phone;
+}
+
+a[href^="tel:"] {
+  color: green;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px){
+* {
+	margin: 0;
+	padding: 0;
+}	
+
+.logo {
+	width: 95vw;
+}
+
+.profile {
+	width: 90vw;
+}
+
+h1 {
+	width: 95vw;
+	font-size: 8vw;
+}
+
+p{
+	width: 95vw;
+	font-size: 5vw;
+}
+
+h2 {
+	width: 95vw;
+	font-size: 8vw;
+}
+
+h3 {
+	width: 95vw;
+	font-size: 5vw;
+}
+
+.services li {
+	padding: 5vh 0;
+}
+.services li a{
+	width: 95vw;
+	font-size: 5vw;
+	color: green;
+}
+
+footer {
+	display: grid;
+	grid-gap: 8vh;
+	grid-template-columns: 100%;
+	grid-template-areas: 
+	"hours"
+	"address"
+	"phone"
+	"mail";
+}
+.phone {
+	width: 95vw;
+	font-size: 5vw;
+	grid-area: phone;
+}
+.hours {
+	width: 50vw;
+	font-size: 5vw;
+	color: green;
+	grid-area: hours;
+}
+.address a{
+	width: 95vw;
+	font-size: 5vw;
+	grid-area: address;
+}
+
+.mail {
+	font-size: 5vw;
+	color: green;
+	grid-area: mail;
+	padding-bottom: 8vh;
+	text-decoration: none;
+}
+.map {
+	display: none;
+}
+}
+
